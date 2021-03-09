@@ -19,7 +19,9 @@ public class LotteryNumbers {
 		do {
 			if (answer.equals("yes")) {
 				System.out.println("continue");
-			} else {
+			} 
+			else 
+			{
 				System.out.println("please return later to complete the survey");
 			}
 
@@ -72,23 +74,21 @@ public class LotteryNumbers {
 			int lottNum3 = 42 / luckyNum;
 
 			int lottNum4 = modelYear + luckyNum;
+			
+			min = 0;
+			max = 65;
+			int value1 = firstName.charAt(5);
+			while (value1 <= 0) {
 
-			int lottNum5 = firstName.charAt(0);
-
-			int min1 = 0;
-			int max1 = 76;
-			int value1 = rand.nextInt();
-
-			while (value <= 0) {
-				value -= max1;
+				value1 -= max;
 			}
 
-			while (value >= 65) {
-				value += max1;
+			while (value1 >= 75) {
+				value1 += max;
 			}
 
 			System.out.print(
-					"Lottery numbers: " + lottNum1 + "," + lottNum2 + "," + lottNum3 + "," + lottNum4 + "," + lottNum5);
+					"Lottery numbers: " + lottNum1 + "," + lottNum2 + "," + lottNum3 + "," + lottNum4 + "," + value);
 
 			System.out.println("\nWould you like to play again?");
 			answer = input.nextLine();
