@@ -22,7 +22,7 @@ public class AsciiChars {
 		// TODO: print valid lowercase alphabetic input
 
 		System.out.println("\nlowercase alphabet: ");
-		for (int i = 97; i <= 122; i++) {
+		for (int i = 'a'; i <= 'z'; i++) {
 			System.out.printf("%s", (char)i);
 		}
 	}
