@@ -44,7 +44,7 @@ public class LotteryNumbers {
 			System.out.println("Enter a random number between 1 and 50");
 			int randNum = Integer.parseInt(input.nextLine());
 
-			// generating magic ball attempt(s)
+			// generating magic ball 
 
 			Random rand = new Random();
 
@@ -64,6 +64,7 @@ public class LotteryNumbers {
 			System.out.println("Magic ball: " + value);
 
 			// 5 non-magic numbers
+			
 			int lottNum1 = jerseyNum + petAge + luckyNum;
 
 			int lottNum2 = petAge + modelYear;
