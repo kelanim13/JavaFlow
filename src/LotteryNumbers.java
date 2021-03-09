@@ -37,10 +37,10 @@ public class LotteryNumbers {
 			System.out.println("What is your lucky number?");
 			int luckyNum = Integer.parseInt(input.nextLine());
 
-			System.out.println("Do they have a favorite quarterback?  If so what is their jersey number?");
+			System.out.println("Do you have a favorite quarterback?  If so what is their jersey number?");
 			int jerseyNum = Integer.parseInt(input.nextLine());
 
-			System.out.println("What is two-digit model year of their car?");
+			System.out.println("What is the two-digit model year of your car?");
 			int modelYear = Integer.parseInt(input.nextLine());
 
 			System.out.println("What is the first name of the your favorite actor or actress?");
