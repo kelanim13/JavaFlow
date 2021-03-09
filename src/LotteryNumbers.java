@@ -73,11 +73,11 @@ public class LotteryNumbers {
 
 			int lottNum4 = modelYear + luckyNum;
 
-			int lottNum5 = petName.charAt(2) - 75;
+			int lottNum5 = firstName.charAt(0);
 
 			int min1 = 0;
 			int max1 = 76;
-			int value1 = rand.nextInt(66);
+			int value1 = rand.nextInt();
 
 			while (value <= 0) {
 				value -= max1;
@@ -90,7 +90,7 @@ public class LotteryNumbers {
 			System.out.print(
 					"Lottery numbers: " + lottNum1 + "," + lottNum2 + "," + lottNum3 + "," + lottNum4 + "," + lottNum5);
 
-			System.out.println("Would you like to play again?");
+			System.out.println("\nWould you like to play again?");
 			answer = input.nextLine();
 
 		} while (answer.equals("yes"));
