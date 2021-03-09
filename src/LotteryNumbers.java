@@ -16,14 +16,17 @@ public class LotteryNumbers {
 		System.out.println("\nDo you wish to continue this interactive portion?");
 		String answer = input.nextLine();
 
+		if (answer.equals("yes")) {
+			System.out.println("continue");
+		} 
+		else 
+		{
+			System.out.println("please return later to complete the survey");
+			return;
+		}
+		
 		do {
-			if (answer.equals("yes")) {
-				System.out.println("continue");
-			} 
-			else 
-			{
-				System.out.println("please return later to complete the survey");
-			}
+			
 
 			System.out.println("What is the name of your favorite pet?");
 			String petName = input.nextLine();
@@ -83,7 +86,7 @@ public class LotteryNumbers {
 				value1 -= max;
 			}
 
-			while (value1 >= 75) {
+			while (value1 >= 65) {
 				value1 += max;
 			}
 
